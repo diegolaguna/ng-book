@@ -17,10 +17,14 @@ $ n stable
 
 ```
 
+**Typescript**
+
+`$ npm install -g typescript`
+
 **Angular CLI**
 
 `$ npm install -g @angular/cli`
 
-**Typescript**
+**Create first project with cli tool**
 
-`$ npm install -g typescript`
+`ng new angular-hello-world`
