@@ -25,4 +25,5 @@ export class Article {
         this.link = link;
         this.votes = votes || 0;
     }
+
 }

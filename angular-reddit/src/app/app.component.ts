@@ -31,12 +31,18 @@ export class AppComponent {
 
     if (this.hasValidInputs(title, link)) {
       console.log(`Title: ${title.value} - Link: ${link.value}`);
-      return true;
+      this.articles.push(new Article(title.value, link.value, 0));
+      title.value = '';
+      link.value = '';
     } else {
       console.log('Not valid inputs.');
-      return false;
     }
+    
+    return false;
+  }
 
+  sortedArticles(): Article[] {
+    return this.articles.sort( (a: Article, b: Article) => b.votes - a.votes );
   }
 
 }
