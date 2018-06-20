@@ -9,7 +9,7 @@ import { Product } from '../product.model';
 export class ProductsListComponent {
 
   @Input() productList: Product[];
-  @Output() onProductSelected: EventEmitter<Product>
+  @Output() onProductSelected: EventEmitter<Product>;
   
   private currentProduct: Product;
 
